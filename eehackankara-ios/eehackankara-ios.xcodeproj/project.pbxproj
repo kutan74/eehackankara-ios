@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163A07A758790EAFE7A04A5E /* Pods_eehackankara_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93176A429182910386EED78D /* Pods_eehackankara_ios.framework */; };
 		A06CA8E9227DAF9700AA10DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06CA8E8227DAF9700AA10DC /* AppDelegate.swift */; };
 		A06CA8EB227DAF9700AA10DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06CA8EA227DAF9700AA10DC /* ViewController.swift */; };
 		A06CA8EE227DAF9700AA10DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06CA8EC227DAF9700AA10DC /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		812A7289610F3AB7DA324F5E /* Pods-eehackankara-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eehackankara-ios.debug.xcconfig"; path = "Target Support Files/Pods-eehackankara-ios/Pods-eehackankara-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		93176A429182910386EED78D /* Pods_eehackankara_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eehackankara_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06CA8E5227DAF9700AA10DC /* eehackankara-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eehackankara-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06CA8E8227DAF9700AA10DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06CA8EA227DAF9700AA10DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A06CA8EF227DAF9800AA10DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A06CA8F2227DAF9800AA10DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A06CA8F4227DAF9800AA10DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D338D516B75F610C07A521B7 /* Pods-eehackankara-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eehackankara-ios.release.xcconfig"; path = "Target Support Files/Pods-eehackankara-ios/Pods-eehackankara-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163A07A758790EAFE7A04A5E /* Pods_eehackankara_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B8829DAEEEEEDBCA31F996F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93176A429182910386EED78D /* Pods_eehackankara_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		803355CBA35A60D446C7E9E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				812A7289610F3AB7DA324F5E /* Pods-eehackankara-ios.debug.xcconfig */,
+				D338D516B75F610C07A521B7 /* Pods-eehackankara-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A06CA8DC227DAF9700AA10DC = {
 			isa = PBXGroup;
 			children = (
 				A06CA8E7227DAF9700AA10DC /* eehackankara-ios */,
 				A06CA8E6227DAF9700AA10DC /* Products */,
+				803355CBA35A60D446C7E9E4 /* Pods */,
+				7B8829DAEEEEEDBCA31F996F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A06CA8F7227DAF9800AA10DC /* Build configuration list for PBXNativeTarget "eehackankara-ios" */;
 			buildPhases = (
+				23D40403F05DE051D3DF4CCF /* [CP] Check Pods Manifest.lock */,
 				A06CA8E1227DAF9700AA10DC /* Sources */,
 				A06CA8E2227DAF9700AA10DC /* Frameworks */,
 				A06CA8E3227DAF9700AA10DC /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23D40403F05DE051D3DF4CCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eehackankara-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A06CA8E1227DAF9700AA10DC /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		A06CA8F8227DAF9800AA10DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812A7289610F3AB7DA324F5E /* Pods-eehackankara-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +350,7 @@
 		};
 		A06CA8F9227DAF9800AA10DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D338D516B75F610C07A521B7 /* Pods-eehackankara-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
